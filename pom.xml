@@ -14,7 +14,7 @@
     <name>NBA_Priemer_Stats</name>
     <description>NBA_Priemer_Stats</description>
     <properties>
-        <version>22</version>
+        <version>17</version>
     </properties>
     <dependencies>
         <dependency>
