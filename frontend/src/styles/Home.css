@@ -1,0 +1,142 @@
+.home {
+    background-position: left 800px center;
+    background-size: 670px;
+    background-repeat: no-repeat;
+    animation: run 1.5s linear 1 alternate;
+    -webkit-animation: run 1.5s linear 1 alternate;
+}
+
+@keyframes run {
+    0% {
+        background-position: left 1200px center;
+    }
+    25% {
+        background-position: left 1100px center;
+    }
+    50% {
+        background-position: left 1000px center;
+    }
+    75% {
+        background-position: left 900px center;
+    }
+    100% {
+        background-position: left 800px center;
+    }
+}
+
+@-webkit-keyframes run {
+    0% {
+        background-position: left 1300px center;
+    }
+    25% {
+        background-position: left 1200px center;
+    }
+    50% {
+        background-position: left 1100px center;
+    }
+    75% {
+        background-position: left 1000px center;
+    }
+    100% {
+        background-position: left 900px center;
+    }
+}
+
+
+
+.headerContainer {
+    width: auto;
+    margin-left: 50px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.headerContainer h1 {
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    height: 60px;
+    font-weight: 50;
+    color: Black;
+    animation: fadeIn 5s;
+}
+
+
+.headerContainer p {
+    padding: 0;
+    font-size: 40px;
+    font-weight: lighter;
+    color: Black;
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.headerContainer button {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+    justify-content: center;
+    background-color: #121619;
+    height: 50px;
+    width: 180px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0;
+    position: relative;
+}
+
+.btn1, .btn2, .btn3, .btn4 {
+    animation: btn 1s forwards;
+}
+
+@keyframes btn {
+    0% {
+        left: -200px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+/* Apply different delays to each button */
+.btn1 {
+    animation-delay: 0s;
+}
+
+.btn2{
+    animation-delay: 0.5s;
+}
+
+.btn3 {
+    animation-delay:1s;
+}
+
+.btn4 {
+    animation-delay:1.5s;
+}
+
+
+.btns:hover {
+    background-color: #07090a;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+@media only screen and (max-width: 650px) {
+    .home {
+        justify-content: center;
+        align-items: center;
+    }
+}

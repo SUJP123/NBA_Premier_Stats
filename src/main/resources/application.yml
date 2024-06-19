@@ -1,0 +1,6 @@
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/nba
+    username: dummy
+    password: dummy
+    pool-size: 30
