@@ -1,6 +1,6 @@
 app:
   datasource:
-    jdbc-url: jdbc:postgresql://localhost:5432/nba
-    username: sujaypatel
-    password: password
+    jdbc-url: jdbc:postgresql://c9mq4861d16jlm.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/dfqi8pfhqnniof
+    username: ufnb9blgh2280i
+    password: p16f6811828fd90401313cfc92b8a64f561daddd074cfd905ca1e81b60b5f75e7
     pool-size: 30
