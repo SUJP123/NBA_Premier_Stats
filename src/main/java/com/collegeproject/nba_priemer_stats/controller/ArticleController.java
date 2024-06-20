@@ -2,15 +2,13 @@ package com.collegeproject.nba_priemer_stats.controller;
 
 import com.collegeproject.nba_priemer_stats.model.Article;
 import com.collegeproject.nba_priemer_stats.service.ArticleService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin( origins = {"http://localhost:3000"}, methods = {RequestMethod.GET})
 public class ArticleController {
 
     private final ArticleService articleService;
