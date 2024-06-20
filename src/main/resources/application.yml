@@ -5,13 +5,12 @@ app:
     password: p5174337c7aff7d0287eefab02c73016c502690d9d839ccce13fd5cc14f602012
     pool-size: 30
 
-spring-hoc:
-  cors:
-    allow-credentials: true
-    allowed-origins:
-      - "https://localhost:3000"
-    allowed-methods:
-      - GET
-      - POST
-      - PATCH
-      - DELETE
+spring:
+  profiles: development
+  mvc:
+    cors:
+      mappings:
+        "/api/**":
+          allowed-origins: "http://localhost:3000"
+          allowed-methods: "*"
+          allowed-headers: "*"
