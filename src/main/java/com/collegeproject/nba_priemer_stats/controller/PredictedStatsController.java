@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/predictions")
+@CrossOrigin( origins = {"https://nba-premier-l5kix5t83-sujp123s-projects.vercel.app"}, methods = {RequestMethod.GET})
 public class PredictedStatsController {
     @Autowired
     private PredictedStatsService predictedStatsService;

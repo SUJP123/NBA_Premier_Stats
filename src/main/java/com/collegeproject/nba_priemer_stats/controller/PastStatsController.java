@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/historic")
+@CrossOrigin( origins = {"https://nba-premier-l5kix5t83-sujp123s-projects.vercel.app"}, methods = {RequestMethod.GET})
 public class PastStatsController {
     @Autowired
     private PastStatsService pastStatsService;
