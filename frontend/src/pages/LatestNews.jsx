@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/LatestNews.css';
 
+const API_URL = 'https://nba-premier-stats-a373f9b1c4a8.herokuapp.com';
 function LatestNews() {
     const [articles, setArticles] = useState([]);
     const [source, setSource] = useState('');
@@ -20,7 +21,7 @@ function LatestNews() {
     ];
 
     const fetchArticles = () => {
-        let url = `/api/articles`;
+        let url = `${API_URL}/api/articles`;
         let params = [];
 
         if (source) params.push(`source=${source}`);

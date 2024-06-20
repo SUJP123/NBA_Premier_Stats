@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Navbar from "./components/Navbar.jsx";
 import LatestNews from "./pages/LatestNews.jsx";
 import HistoricViewAll from "./pages/HistoricViewAll";
-
 function App() {
 
     return (

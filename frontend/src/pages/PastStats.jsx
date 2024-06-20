@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../styles/PastStats.css';
 
+const API_URL = 'https://nba-premier-stats-a373f9b1c4a8.herokuapp.com';
 function PastStats() {
     const [season, setSeason] = useState('');
     const [seasonType, setSeasonType] = useState('');
@@ -19,7 +20,7 @@ function PastStats() {
     console.log(topFivePlayers);
     useEffect(() => {
         if (season && seasonType && stat) {
-            axios.get(`/api/historic/top${stat}?season=${season}&seasonType=${seasonType}`)
+            axios.get(`${API_URL}/api/historic/top${stat}?season=${season}&seasonType=${seasonType}`)
                 .then(response => {
                     setTopPlayers(response.data); // Assuming response.data is a single player object
                 })

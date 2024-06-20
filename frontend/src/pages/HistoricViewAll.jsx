@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import '../styles/HistoricViewAll.css';
 
+const API_URL = 'https://nba-premier-stats-a373f9b1c4a8.herokuapp.com';
 function HistoricViewAll() {
     const [view, setView] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
 
     const fetchData = () => {
         setIsLoading(true);
-        axios.get('/api/historic/ViewAll')
+        axios.get(`${API_URL}/api/historic/ViewAll`)
             .then(response => {
                 setView(response.data);
                 setIsLoading(false);

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../styles/PredictedStats.css'
 
+const API_URL = 'https://nba-premier-stats-a373f9b1c4a8.herokuapp.com';
 function PredictedStats() {
     const [player, setPlayer] = useState('');
     const [playerData, setPlayerData] = useState(null);
@@ -10,7 +11,7 @@ function PredictedStats() {
         if (player) {
             const formattedPlayer = player.replace(/\s+/g, '_');
             console.log(formattedPlayer);
-            axios.get(`/api/predictions/player?playerName=${formattedPlayer}`)
+            axios.get(`${API_URL}/api/predictions/player?playerName=${formattedPlayer}`)
                 .then(response => {
                     setPlayerData(response.data); // Assuming response.data is a single player object
                 })
