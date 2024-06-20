@@ -1,4 +1,4 @@
-#NBA Premier Stats
+#NBA_Premier_Stats
 
 NBA Premier Stats is a full stack web application that provides historical and predictive statistics using the Sklearn library for all active NBA players, as well as the latest news articles related to NBA teams and players. The application consists of a React frontend and a Spring Boot backend with data stored in a postgreSQL database.
 
