@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/historic")
-@CrossOrigin( origins = {"http://localhost:8000"}, methods = {RequestMethod.GET})
+@CrossOrigin( origins = {"http://localhost:3000"}, methods = {RequestMethod.GET})
 public class PastStatsController {
     @Autowired
     private PastStatsService pastStatsService;
