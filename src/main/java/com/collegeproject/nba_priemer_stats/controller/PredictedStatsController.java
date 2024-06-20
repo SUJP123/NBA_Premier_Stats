@@ -9,7 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/predictions")
-@CrossOrigin( origins = {"http://localhost:3000"}, methods = {RequestMethod.GET})
 public class PredictedStatsController {
     @Autowired
     private PredictedStatsService predictedStatsService;
