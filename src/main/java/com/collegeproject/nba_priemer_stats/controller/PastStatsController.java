@@ -3,15 +3,13 @@ package com.collegeproject.nba_priemer_stats.controller;
 import com.collegeproject.nba_priemer_stats.entity.PastStats;
 import com.collegeproject.nba_priemer_stats.service.PastStatsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/historic")
+@CrossOrigin( origins = {"http://localhost:8000"}, methods = {RequestMethod.GET})
 public class PastStatsController {
     @Autowired
     private PastStatsService pastStatsService;
