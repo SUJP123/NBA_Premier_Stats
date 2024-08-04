@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin( origins = {"https://nba-premier-l5kix5t83-sujp123s-projects.vercel.app"}, methods = {RequestMethod.GET})
+@CrossOrigin( origins = {"https://nbapremierstats.vercel.app"}, methods = {RequestMethod.GET})
 public class ArticleController {
 
     private final ArticleService articleService;
